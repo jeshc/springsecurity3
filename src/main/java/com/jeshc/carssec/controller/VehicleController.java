@@ -1,4 +1,4 @@
-package com.jeshc.carssec.model.controller;
+package com.jeshc.carssec.controller;
 
 import com.jeshc.carssec.repository.VehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
