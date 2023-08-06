@@ -43,6 +43,7 @@ public class SecurityConfig {
         return http.csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers("/").permitAll()
+                .requestMatchers("/security/**").permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers("/vehicles/**","/manage/**").authenticated()
                 .and().formLogin()
